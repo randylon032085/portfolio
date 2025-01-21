@@ -1,8 +1,13 @@
 import android1 from "../assets/video/android1.mp4";
 import android2 from "../assets/video/android2.mp4";
+import games from "../assets/images/games.jpg";
 function Projects() {
   return (
-    <section id="projects" className="py-20">
+    <section
+      id="projects"
+      className="py-20"
+      style={{ background: `url(${games})` }}
+    >
       <div className="max-w-screen-lg mx-auto text-center">
         <h2 className="text-4xl font-semibold">My Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
