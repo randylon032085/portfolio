@@ -12,9 +12,9 @@ function About() {
           Hi! I’m Randylon, graduate of Iteractive Digital Technologies. I ams
           passionate and detail-oriented software developer with a love for
           creating innovative solutions and building meaningful applications.
-          With a solid foundation in JavaScript, React, Android Studio, Java,
-          Supabase. I have honed my skills in both frontend and backend
-          development, allowing me to build scalable, performant, and
+          With a solid foundation in JavaScript, Three.js, React, Android
+          Studio, Java, Supabase. I have honed my skills in both frontend and
+          backend development, allowing me to build scalable, performant, and
           user-friendly software.
         </p>
         <p className="mt-4 text-lg inline-block">

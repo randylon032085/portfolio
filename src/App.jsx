@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Educational from "./components/Educational";
 
 function App() {
   return (
@@ -14,10 +15,11 @@ function App() {
         <div className="flex flex-col min-h-screen">
           <div className="flex-grow">
             <Routes>
-              <Route path="/" element={<Hero />} />
+              <Route path="/portfolio" element={<Hero />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/education" element={<Educational />} />
             </Routes>
           </div>
           <Footer />
