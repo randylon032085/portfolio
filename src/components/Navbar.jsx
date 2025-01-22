@@ -7,7 +7,7 @@ function Navbar() {
         <div className="text-2xl font-bold">My Portfolio</div>
         <ul className="space-x-4 flex gap-2">
           <li>
-            <NavLink to="/" className="hover:text-yellow-400">
+            <NavLink to="/portfolio" className="hover:text-yellow-400">
               Home
             </NavLink>
           </li>
