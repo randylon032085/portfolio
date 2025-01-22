@@ -233,7 +233,29 @@ function Projects() {
               ></video>
             </figure>
           </div>
-          {/* end of project 10*/}
+          {/* end of project 11*/}
+          {/* Project 10*/}
+          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
+            <h3 className="text-2xl font-semibold">Project 11 </h3>
+            <p className="mt-4">Description of the Project goes here</p>
+            <a
+              href="#"
+              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
+            >
+              View Project
+            </a>
+            <figure className="">
+              <video
+                src={web4}
+                controls
+                autoPlay
+                loop
+                muted
+                className="mt-2 rounded-md"
+              ></video>
+            </figure>
+          </div>
+          {/* end of project 11*/}
         </div>
       </div>
     </section>
