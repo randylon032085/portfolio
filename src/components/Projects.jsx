@@ -9,11 +9,14 @@ import web1 from "../assets/video/web1.mp4";
 import web2 from "../assets/video/web2.mp4";
 import web3 from "../assets/video/web3.mp4";
 import web4 from "../assets/video/web4.mp4";
+import { useState } from "react";
+import ProjectModal from "./ProjectModal";
 function Projects() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <section
       id="projects"
-      className="py-20 bg-cover flex items-center"
+      className="py-2 bg-cover flex items-center justify-center"
       style={{ backgroundImage: `url(${games})` }}
     >
       <div className="max-w-screen-lg mx-auto text-center ">
@@ -258,6 +261,7 @@ function Projects() {
           {/* end of project 11*/}
         </div>
       </div>
+      {/* <ProjectModal title={} description={} linkVideo={} linkGitHub={}/> */}
     </section>
   );
 }
