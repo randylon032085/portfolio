@@ -13,256 +13,77 @@ import { useState } from "react";
 import ProjectModal from "./ProjectModal";
 function Projects() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const Projects = [
+    {
+      title: "Project1",
+      description: "Strawbery Recipe App",
+      platform: "Android",
+      linkVideo: `${android1}`,
+      linkGitHub:
+        "https://github.com/randylon032085/hoe2_android/releases/tag/v1.0",
+    },
+    {
+      title: "Project2",
+      description: "Night Tour Ticket App",
+      platform: "Android",
+      linkVideo: `${android2}`,
+      linkGitHub:
+        "https://github.com/randylon032085/hoe3_android/releases/tag/v1.0",
+    },
+  ];
+  console.log(Projects);
   return (
-    <section
+    <div
       id="projects"
-      className="py-2 bg-cover flex items-center justify-center"
+      className="h-screen py-2 bg-cover flex items-center justify-center"
       style={{ backgroundImage: `url(${games})` }}
     >
-      <div className="max-w-screen-lg mx-auto text-center ">
-        <h2 className="text-4xl font-semibold">My Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
-          {/* Project 1 */}
-          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Project 1 </h3>
-            <p className="mt-4">Description of the Project goes here</p>
-            <a
-              href="#"
-              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
-            >
-              View Project
-            </a>
-            <figure className="">
-              <video
-                src={android1}
-                controls
-                autoPlay
-                loop
-                muted
-                className="mt-2 rounded-md"
-              ></video>
-            </figure>
-          </div>
-          {/* end of project 1*/}
-
-          {/* Project 2 */}
-          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Project 2 </h3>
-            <p className="mt-4">Description of the Project goes here</p>
-            <a
-              href="#"
-              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
-            >
-              View Project
-            </a>
-            <figure>
-              <video src={android2} controls autoPlay loop muted></video>
-            </figure>
-          </div>
-          {/* end of project 2*/}
-
-          {/* Project 3 */}
-          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Project 3 </h3>
-            <p className="mt-4">Description of the Project goes here</p>
-            <a
-              href="#"
-              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
-            >
-              View Project
-            </a>
-            <figure className="">
-              <video
-                src={android3}
-                controls
-                autoPlay
-                loop
-                muted
-                className="mt-2 rounded-md"
-              ></video>
-            </figure>
-          </div>
-          {/* end of project 3*/}
-          {/* Project 4*/}
-          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Project 4 </h3>
-            <p className="mt-4">Description of the Project goes here</p>
-            <a
-              href="#"
-              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
-            >
-              View Project
-            </a>
-            <figure className="">
-              <video
-                src={android4}
-                controls
-                autoPlay
-                loop
-                muted
-                className="mt-2 rounded-md"
-              ></video>
-            </figure>
-          </div>
-          {/* end of project 4*/}
-          {/* Project 5*/}
-          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Project 5 </h3>
-            <p className="mt-4">Description of the Project goes here</p>
-            <a
-              href="#"
-              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
-            >
-              View Project
-            </a>
-            <figure className="">
-              <video
-                src={threejs1}
-                controls
-                autoPlay
-                loop
-                muted
-                className="mt-2 rounded-md"
-              ></video>
-            </figure>
-          </div>
-          {/* end of project 5*/}
-          {/* Project 6*/}
-          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Project 6 </h3>
-            <p className="mt-4">Description of the Project goes here</p>
-            <a
-              href="#"
-              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
-            >
-              View Project
-            </a>
-            <figure className="">
-              <video
-                src={threejs2}
-                controls
-                autoPlay
-                loop
-                muted
-                className="mt-2 rounded-md"
-              ></video>
-            </figure>
-          </div>
-          {/* end of project 6*/}
-          {/* Project 7*/}
-          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Project 7 </h3>
-            <p className="mt-4">Description of the Project goes here</p>
-            <a
-              href="#"
-              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
-            >
-              View Project
-            </a>
-            <figure className="">
-              <video
-                src={web1}
-                controls
-                autoPlay
-                loop
-                muted
-                className="mt-2 rounded-md"
-              ></video>
-            </figure>
-          </div>
-          {/* end of project 7*/}
-          {/* Project 8*/}
-          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Project 8 </h3>
-            <p className="mt-4">Description of the Project goes here</p>
-            <a
-              href="#"
-              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
-            >
-              View Project
-            </a>
-            <figure className="">
-              <video
-                src={web2}
-                controls
-                autoPlay
-                loop
-                muted
-                className="mt-2 rounded-md"
-              ></video>
-            </figure>
-          </div>
-          {/* end of project 8*/}
-          {/* Project 9*/}
-          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Project 9 </h3>
-            <p className="mt-4">Description of the Project goes here</p>
-            <a
-              href="#"
-              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
-            >
-              View Project
-            </a>
-            <figure className="">
-              <video
-                src={web3}
-                controls
-                autoPlay
-                loop
-                muted
-                className="mt-2 rounded-md"
-              ></video>
-            </figure>
-          </div>
-          {/* end of project 9*/}
-          {/* Project 10*/}
-          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Project 10 </h3>
-            <p className="mt-4">Description of the Project goes here</p>
-            <a
-              href="#"
-              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
-            >
-              View Project
-            </a>
-            <figure className="">
-              <video
-                src={web4}
-                controls
-                autoPlay
-                loop
-                muted
-                className="mt-2 rounded-md"
-              ></video>
-            </figure>
-          </div>
-          {/* end of project 11*/}
-          {/* Project 10*/}
-          <div className="bg-gray-800 bg-opacity-40 text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Project 11 </h3>
-            <p className="mt-4">Description of the Project goes here</p>
-            <a
-              href="#"
-              className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
-            >
-              View Project
-            </a>
-            <figure className="">
-              <video
-                src={web4}
-                controls
-                autoPlay
-                loop
-                muted
-                className="mt-2 rounded-md"
-              ></video>
-            </figure>
-          </div>
-          {/* end of project 11*/}
+      <section>
+        <div className="flex gap-[200px] max-w-screen-lg mx-auto text-center ">
+          {Projects.map((el) => (
+            <>
+              <div className="w-[200px]">
+                <div className="bg-gray-800 bg-opacity-40 h-[400px] w-[300px]  text-white p-6 rounded-lg">
+                  <h3 className="text-2xl font-semibold">{el.title} </h3>
+                  <p className="mt-4">{el.description}</p>
+                  <p>Platform: {el.platform}</p>
+                  <a
+                    href={el.linkGitHub}
+                    target="_blank"
+                    className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
+                  >
+                    View Project
+                  </a>
+                  {/* <button
+                    className="bg-yellow-500 w-[178px] rounded-md"
+                    onClick={() => setModalIsOpen(true)}
+                  >
+                    Modal
+                  </button> */}
+                  <figure className="">
+                    <video
+                      src={android1}
+                      controls
+                      autoPlay
+                      loop
+                      muted
+                      className="mt-2 rounded-md"
+                    ></video>
+                  </figure>
+                </div>
+              </div>
+            </>
+          ))}
         </div>
-      </div>
-      {/* <ProjectModal title={} description={} linkVideo={} linkGitHub={}/> */}
-    </section>
+        {/* {modalIsOpen === true ? (
+          <ProjectModal setModalIsOpen={setModalIsOpen} />
+        ) : (
+          ""
+        )} */}
+        {modalIsOpen && <ProjectModal setModalIsOpen={setModalIsOpen} />}
+      </section>
+    </div>
   );
 }
 
