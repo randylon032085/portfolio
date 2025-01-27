@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <nav className=" bg-blend-color-dodge bg-zinc-800 text-white  flex flex-col justify-center items-center flex-1">
+      <nav className=" bg-blend-color-dodge bg-zinc-800 text-white  flex flex-col justify-center items-center mt-auto">
         <div className="flex justify-center">
           {" "}
           <div className=" bg-zinc-800  my-3 mx-1 w-[200px]  h-[100px] p-2 hover:text-yellow-400 ">
