@@ -27,43 +27,66 @@ function Projects() {
       title: "Project2",
       description: "Night Tour Ticket App",
       platform: "Android",
-      linkVideo: `${android2}`,
+      linkVideo: `${android3}`,
       linkGitHub:
         "https://github.com/randylon032085/hoe3_android/releases/tag/v1.0",
+    },
+    {
+      title: "Project3",
+      description: "ASCII Games",
+      platform: "Android",
+      linkVideo: `${android4}`,
+      linkGitHub:
+        "https://github.com/randylon032085/assignment2android/releases/tag/v1.0",
+    },
+    {
+      title: "Project4",
+      description: "ASCII Games",
+      platform: "Android",
+      linkVideo: `${android2}`,
+      linkGitHub:
+        "https://github.com/randylon032085/assignment2android/releases/tag/v1.0",
+    },
+    {
+      title: "Project4",
+      description: "ASCII Games",
+      platform: "Android",
+      linkVideo: `${android2}`,
+      linkGitHub:
+        "https://github.com/randylon032085/assignment2android/releases/tag/v1.0",
     },
   ];
   console.log(Projects);
   return (
     <div
-      id="projects"
       className="h-screen py-2 bg-cover flex items-center justify-center"
       style={{ backgroundImage: `url(${games})` }}
     >
       <section>
-        <div className="flex gap-[200px] max-w-screen-lg mx-auto text-center ">
+        <div className="flex gap-[160px] max-w-screen-lg mx-auto text-center ">
           {Projects.map((el) => (
             <>
-              <div className="w-[200px]">
+              <div className="w-[150px] flex-grow">
                 <div className="bg-gray-800 bg-opacity-40 h-[400px] w-[300px]  text-white p-6 rounded-lg">
                   <h3 className="text-2xl font-semibold">{el.title} </h3>
                   <p className="mt-4">{el.description}</p>
                   <p>Platform: {el.platform}</p>
-                  <a
+                  {/* <a
                     href={el.linkGitHub}
                     target="_blank"
                     className="mt-4 inline-block px-6 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-lg"
                   >
                     View Project
-                  </a>
-                  {/* <button
+                  </a> */}
+                  <button
                     className="bg-yellow-500 w-[178px] rounded-md"
                     onClick={() => setModalIsOpen(true)}
                   >
-                    Modal
-                  </button> */}
+                    View Details
+                  </button>
                   <figure className="">
                     <video
-                      src={android1}
+                      src={el.linkVideo}
                       controls
                       autoPlay
                       loop
