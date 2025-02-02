@@ -1,10 +1,8 @@
-import games from "../assets/images/games.jpg";
 function About() {
   return (
     <section
       id="about"
       className="py-2 h-screen bg-cover text-white flex items-center justify-center"
-      style={{ backgroundImage: `url(${games})` }}
     >
       <div className="max-w-screen-lg mx-auto text-center">
         <h2 className="text-4xl font-semibold">About Me</h2>

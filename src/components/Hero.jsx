@@ -3,10 +3,7 @@ import games from "../assets/images/games.jpg";
 
 function Hero() {
   return (
-    <section
-      className="h-screen bg-cover text-white flex items-center justify-center"
-      style={{ backgroundImage: `url(${games})` }}
-    >
+    <section className="h-screen bg-cover text-white flex items-center justify-center">
       <div className="text-center p-4 bg-opacity-50 bg-black rounded-lg">
         <h1 className="text-5xl font-bold">Hello my name is Randylon</h1>
         <p className="mt-4 text-xl">Passionate Web Developer</p>

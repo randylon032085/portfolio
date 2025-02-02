@@ -6,24 +6,25 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Educational from "./components/Educational";
+import Applayout from "./components/Applayout";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Navbar />
-        <div className="flex flex-col min-h-screen">
-          <div className="flex-grow">
-            <Routes>
+        <div>
+          <Routes>
+            <Route path="/" element={<Applayout />}>
               <Route path="/portfolio" element={<Hero />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/education" element={<Educational />} />
-            </Routes>
-          </div>
-          <Footer />
+            </Route>
+          </Routes>
         </div>
+        <Footer />
       </BrowserRouter>
     </div>
   );

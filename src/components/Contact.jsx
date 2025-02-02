@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import games from "../assets/images/games.jpg";
+
 function Contact() {
   const form = useRef();
 
@@ -22,10 +22,7 @@ function Contact() {
   };
 
   return (
-    <section
-      className="h-screen bg-cover text-black flex items-center justify-center"
-      style={{ backgroundImage: `url(${games})` }}
-    >
+    <section className="h-screen bg-cover text-black flex items-center justify-center">
       <div className="flex flex-col items-center bg-opacity-50 bg-black rounded-md">
         <form
           ref={form}
