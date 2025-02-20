@@ -23,7 +23,7 @@ function Footer() {
             <li>Contact: 23333333333</li>
           </div>
           <div className=" bg-zinc-800 my-3 mx-1 w-[200px] h-[100px]  p-2">
-            <NavLink to="/education">Education</NavLink>
+            <NavLink to="/education">My Education</NavLink>
           </div>
         </div>
         <div>@copy2025 Randylon. All Rights Reserved</div>

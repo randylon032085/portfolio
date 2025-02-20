@@ -38,6 +38,7 @@ function Projects() {
       id: 2,
       title: "Project 2",
       name: "ASII CODE",
+      imgPlatform: `${android}`,
       description:
         "ASCII, an acronym for American Standard Code for Information Interchange, is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices. The game is random character you will received a different character and you will have to answer the ASCII code. You have only three lives so be careful for making an answer. ",
       platform: "Android",
@@ -79,12 +80,23 @@ function Projects() {
     },
     {
       id: 4,
-      title: "Project 5",
+      title: "Project 6",
       name: "Texture Animation",
       description:
         "GridView App: Organize Your World with Ease Enhance your productivity and creativity with the GridView app for Android, designed to help you visualize and manage your content efficiently. Whether you're organizing photos, arranging your favorite apps, or creating dynamic layouts, GridView offers a flexible and intuitive interface to bring your ideas to lifDiscover the magic of nighttime adventures with the Night Sky Tour Ticket app, your one-stop solution for booking tickets to the most captivating night tours. Available on Android, our app offers a seamless and user-friendly experience, ensuring you never miss out on the thrill of exploring cityscapes under the stars.",
       platform: "Android",
       linkVideo: `${threejs2}`,
+      linkGitHub:
+        "https://github.com/randylon032085/icosahedrongeometry/blob/main/main.js",
+    },
+    {
+      id: 4,
+      title: "Project 7",
+      name: "Texture Animation",
+      description:
+        "GridView App: Organize Your World with Ease Enhance your productivity and creativity with the GridView app for Android, designed to help you visualize and manage your content efficiently. Whether you're organizing photos, arranging your favorite apps, or creating dynamic layouts, GridView offers a flexible and intuitive interface to bring your ideas to lifDiscover the magic of nighttime adventures with the Night Sky Tour Ticket app, your one-stop solution for booking tickets to the most captivating night tours. Available on Android, our app offers a seamless and user-friendly experience, ensuring you never miss out on the thrill of exploring cityscapes under the stars.",
+      platform: "Android",
+      linkVideo: `${web1}`,
       linkGitHub:
         "https://github.com/randylon032085/icosahedrongeometry/blob/main/main.js",
     },

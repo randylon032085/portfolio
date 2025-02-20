@@ -7,13 +7,13 @@ function About() {
       <div className="max-w-screen-lg mx-auto text-center">
         <h2 className="text-4xl font-semibold">About Me</h2>
         <p className="mt-4 text-lg inline-block">
-          Hi! I’m Randylon, graduate of Iteractive Digital Technologies. I ams
-          passionate and detail-oriented software developer with a love for
-          creating innovative solutions and building meaningful applications.
-          With a solid foundation in JavaScript, Three.js, React, Android
-          Studio, Java, Supabase. I have honed my skills in both frontend and
-          backend development, allowing me to build scalable, performant, and
-          user-friendly software.
+          Hi! I’m Randylon, Im taking Iteractive Digital Technologies in Norther
+          Light College in Fort st. John. I am passionate and detail-oriented
+          software developer with a love for creating innovative solutions and
+          building meaningful applications. With a solid foundation in
+          JavaScript, Three.js, React, Android Studio, Java, Supabase. I have
+          honed my skills in both frontend and backend development, allowing me
+          to build scalable, performant, and user-friendly software.
         </p>
         <p className="mt-4 text-lg inline-block">
           I thrive on solving complex problems and collaborating with
