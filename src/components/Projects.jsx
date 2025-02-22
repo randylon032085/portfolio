@@ -106,13 +106,22 @@ function Projects() {
   console.log("JSON TYPE", jp);
 
   return (
-    <div>
+    <div
+      className=""
+      style={{
+        // height: "400px",
+        background: `url(${games})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+      }}
+    >
       <section className="flex flex-wrap bg-cover text-white items-center justify-center gap-5 mt-10 mb-10">
         {Projects.map((el) => (
           <>
             <div
               key={el.id}
-              className="text-center p-4 bg-opacity-50 bg-black rounded-lg w-[300px] h-[500px] gap-4 "
+              className="text-center p-4 bg-opacity-30 bg-black rounded-lg w-[300px] h-[500px] gap-4 "
             >
               <div className="mt-3">
                 <h1 className="text-1xl">{el.title}</h1>

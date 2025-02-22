@@ -11,7 +11,7 @@ function About() {
           Light College in Fort st. John. I am passionate and detail-oriented
           software developer with a love for creating innovative solutions and
           building meaningful applications. With a solid foundation in
-          JavaScript, Three.js, React, Android Studio, Java, Supabase. I have
+          JavaScript, Three.js, React, Android Studio, Java, Firebase. I have
           honed my skills in both frontend and backend development, allowing me
           to build scalable, performant, and user-friendly software.
         </p>

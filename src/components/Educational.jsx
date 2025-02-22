@@ -5,18 +5,21 @@ function Educational() {
   return (
     <section
       className="h-screen bg-cover flex justify-center gap-3 items-center text-white "
-      style={{ backgroundImage: `url(${image})` }}
+      style={{
+        backgroundAttachment: "fixed",
+        backgroundImage: `url(${image})`,
+      }}
     >
-      <div className="bg-black bg-opacity-50 text-3xl h-[500px] rounded-md p-4 list-none w-[400px]">
+      <div className="bg-black bg-opacity-30 text-3xl h-[700px] rounded-md p-4 list-none w-[400px]  ">
         <img src={NLC} alt="Image1" className="my-3.5" />
         <li className="list-none text-xl">
-          Program: Interactive and Digital Technologies
+          Progam: Interactive and Digital Technologies
         </li>
         <p className="text-sm my-6">
           *Previously called “Interactive Technologies and Game Design Diploma”
         </p>
         <p className="text-sm">
-          The Diploma in Interactive and Digital Technologies prepares graduates
+          The Diploma in Interactive and DigitalTechnologiesprepares graduates
           to work in the growing information technology industry that combines
           internet, multimedia, networking, and software technologies,
           management and marketing skills.
@@ -32,7 +35,7 @@ function Educational() {
         <li className="text-sm">React: length 84 total of hrs</li>
       </div>
 
-      <div className="bg-black bg-opacity-50 text-3xl h-[500px] rounded-md p-4 w-[400px] flex flex-col items-center">
+      <div className="bg-black bg-opacity-30 text-3xl h-[700px] rounded-md p-4 w-[400px] flex flex-col items-center">
         <img src={UCC} alt="" className="w-[100px]" />
         <li className="list-none text-xl">
           Program: Bachelor of Science in Office Administration

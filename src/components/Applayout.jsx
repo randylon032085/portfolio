@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import games from "../assets/images/games.jpg";
 import { useEffect, useState } from "react";
+import Footer from "./Footer";
 function Applayout() {
   const path = useLocation();
   const converted = path.pathname.split("/")[1];
@@ -19,10 +20,11 @@ function Applayout() {
 
   return (
     <div
-      className="flex flex-col min-h-screen mt-auto bg-cover"
-      style={{ backgroundImage: bg }}
+      className="md:flex flex-col min-h-screen mt-auto bg-cover xs:flex min-h-screen mt-auto bg-cover"
+      style={{ backgroundImage: bg, backgroundAttachment: "fixed" }}
     >
       <Outlet />
+      <Footer />
     </div>
   );
 }
