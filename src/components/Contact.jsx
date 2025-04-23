@@ -24,15 +24,15 @@ function Contact() {
   return (
     <>
       <section className="justify-center items-center md:flex md:flex-row  bg-cover text-black gap-5 sm:flex sm:flex-col ">
-        <div className="bg-black bg-opacity-50 mt-10 max-h-[600px] max-w-[650-px] items-center mb-20  text-white flex flex-col">
+        <div className="bg-gray-700 rounded-md bg-opacity-20 mt-10 max-h-[600px] max-w-[650-px] items-center mb-20  text-white flex flex-col p-5">
           <p className="p-7 mt-11 max-w-[650px]">
             Hi, This is my API email.You can send me a message here if you want.
             Once you send it, it will go directly to my inbox, and I will
             respond as soon as possible. Thank you.
           </p>
-          <p className="text-2xl p-7">What is Email.Js?</p>
+          <p className="text-2xl p-2">What is Email.Js?</p>
 
-          <article className="pl-7 pr-7 text-justify flex flex-wrap break-words max-w-[650px] ">
+          <article className="pl-7 pr-5 text-justify flex flex-wrap break-words max-w-[650px] ">
             <p>
               Email.jsis a JavaScript library designed to simplify sending
               emails directly from client-side JavaScript code. It provides an
@@ -52,8 +52,8 @@ function Contact() {
           </article>
         </div>
 
-        <div className="mt-10 mb-20 max-h-[600px] flex flex-col items-center justify-center bg-opacity-50 w-[500px] bg-black rounded-md lg:max-h-[574px] 2xl:max-h-[526px]">
-          <div className="bg-gray-400 bg-opacity-50 rounded-md h-[400px] w-[400px] flex  my-[200px] ">
+        <div className="mt-10 mb-20  max-h-[600px] flex flex-col items-center justify-center bg-opacity-20 w-[500px] bg-gray-700 rounded-md lg:max-h-[574px] 2xl:max-h-[526px]">
+          <div className="bg-gray-400 bg-opacity-50 rounded-md h-[400px] w-[400px] flex  my-[200px] p-7">
             <form
               ref={form}
               onSubmit={sendEmail}

@@ -9,6 +9,7 @@ import web1 from "../assets/video/web1.mp4";
 import web2 from "../assets/video/web2.mp4";
 import web3 from "../assets/video/web3.mp4";
 import web4 from "../assets/video/web4.mp4";
+import android from "../assets/video/beanUpNorth.mp4";
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
 import android from "..//assets/images/android.jpg";
@@ -97,6 +98,17 @@ function Projects() {
         "GridView App: Organize Your World with Ease Enhance your productivity and creativity with the GridView app for Android, designed to help you visualize and manage your content efficiently. Whether you're organizing photos, arranging your favorite apps, or creating dynamic layouts, GridView offers a flexible and intuitive interface to bring your ideas to lifDiscover the magic of nighttime adventures with the Night Sky Tour Ticket app, your one-stop solution for booking tickets to the most captivating night tours. Available on Android, our app offers a seamless and user-friendly experience, ensuring you never miss out on the thrill of exploring cityscapes under the stars.",
       platform: "Android",
       linkVideo: `${web1}`,
+      linkGitHub:
+        "https://github.com/randylon032085/icosahedrongeometry/blob/main/main.js",
+    },
+    {
+      id: 4,
+      title: "Project 8",
+      name: "Bean UpNorth",
+      description:
+        "This app is designed to help customers order ahead of time and see the full menu before coming to the shop. This document is intended to the members of the group who will oversee the whole project, and it is also intended to the professor to check our progress and give us recommendations.",
+      platform: "Android",
+      linkVideo: `${android}`,
       linkGitHub:
         "https://github.com/randylon032085/icosahedrongeometry/blob/main/main.js",
     },

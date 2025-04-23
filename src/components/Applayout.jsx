@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import games from "../assets/images/games.jpg";
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
@@ -18,6 +18,10 @@ function Applayout() {
     [converted]
   );
 
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate("portfolio");
+  }, []);
   return (
     <div
       className="md:flex flex-col min-h-screen mt-auto bg-cover xs:flex min-h-screen mt-auto bg-cover"

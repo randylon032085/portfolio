@@ -12,7 +12,7 @@ function ProjectModal({
   return (
     <>
       <div className="121"></div>
-      <div className="fixed inset-0 bg-black text-white items-center justify-center flex flex-col gap-2 h-[800px] mx-auto w-[900px] mt-[20px] rounded-lg ">
+      <div className="fixed inset-0 bg-gray-700 bg-opacity-30 text-white items-center justify-center flex flex-col gap-2 h-[800px] mx-auto w-[900px] mt-[20px] rounded-lg ">
         <span
           className=" cursor-pointer bg-gray-600 hover:text-gray-800 font-bold w-[30px] text-center rounded-md mb-[20px] ml-[750px] shadow-black text-lg"
           onClick={() => setModalIsOpen(false)}
